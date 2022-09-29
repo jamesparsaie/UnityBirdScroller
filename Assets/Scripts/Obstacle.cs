@@ -6,6 +6,7 @@ public class Obstacle : MonoBehaviour
 {
     public int damage;
     public int speed;
+    public GameObject explosionEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,8 @@ public class Obstacle : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
             other.GetComponent<PlayerController>().health -= damage;
-            Debug.Log("Collision!");
             Destroy(gameObject);
         }
     }
