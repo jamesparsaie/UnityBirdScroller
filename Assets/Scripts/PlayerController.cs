@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         healthDisplay.text = "Health: "+health.ToString();
         if(health <= 0){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("Main Menu");
         }
         //transform.position = Vector2.MoveTowards(transform.position, desiredDirection, speed*Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < boundary) {
