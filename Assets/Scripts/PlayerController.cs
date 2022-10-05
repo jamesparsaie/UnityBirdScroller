@@ -12,7 +12,11 @@ public class PlayerController : MonoBehaviour
     private float boundary = 3.7f;
 
     public TextMeshProUGUI healthDisplay;
+
+    public TextMeshProUGUI coinDisplay;
     public int health;
+
+    public int coinCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +26,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Track health and score display
+        coinDisplay.text = "Coins: "+coinCount.ToString();
         healthDisplay.text = "Health: "+health.ToString();
+
+        //Manage reset if health below 0
         if(health <= 0){
             SceneManager.LoadScene("Main Menu");
         }
-        //transform.position = Vector2.MoveTowards(transform.position, desiredDirection, speed*Time.deltaTime);
+        
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < boundary) {
             desiredDirection = new Vector2(transform.position.x, transform.position.y + increment);
             transform.position = desiredDirection;
