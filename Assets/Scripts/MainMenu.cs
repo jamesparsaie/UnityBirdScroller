@@ -11,6 +11,13 @@ public class MainMenu : MonoBehaviour
     }
     //Allow users to exit the game from main menu
     public void ExitGame() {
+        //Quits in real build
         Application.Quit();
+        //Added code to show quit in unity editor for showcasing gameplay
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+    public void EnterOptions() {
+        SceneManager.LoadScene("Options");
     }
 }
