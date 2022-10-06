@@ -235,6 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298492008}
   - component: {fileID: 298492009}
+  - component: {fileID: 298492010}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -278,6 +279,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00485bc2bfa16cb4fa75d2b45602fcb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &298492010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298492007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3905bfb00dfbe1a4d90d161bb0afef45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiUrl: https://wtoq85r4se.execute-api.us-east-2.amazonaws.com/items/1
+  apiPutUrl: https://wtoq85r4se.execute-api.us-east-2.amazonaws.com/items
 --- !u!1 &1028861276
 GameObject:
   m_ObjectHideFlags: 0

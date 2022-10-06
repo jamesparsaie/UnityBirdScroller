@@ -294,6 +294,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.9579964, y: 3.8616292}
   m_EdgeRadius: 0
+--- !u!114 &305455471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305455464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3905bfb00dfbe1a4d90d161bb0afef45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiUrl: https://wtoq85r4se.execute-api.us-east-2.amazonaws.com/items/1
+  apiPutUrl: https://wtoq85r4se.execute-api.us-east-2.amazonaws.com/items
 --- !u!1 &374584385
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +582,6 @@ MonoBehaviour:
   score: 0
   scoreBoard: {fileID: 1335673850}
   timeTracker: 0
-  scoreTracker: 0
 --- !u!114 &1335673850
 MonoBehaviour:
   m_ObjectHideFlags: 0

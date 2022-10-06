@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     public int score;
     public TextMeshProUGUI scoreBoard;
     public float timeTracker = 0;
-    public int scoreTracker = 0;
+    public static int scoreTracker = 0;
     // Start is called before the first frame update
     void Start()
     {
