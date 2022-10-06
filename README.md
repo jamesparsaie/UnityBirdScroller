@@ -10,6 +10,9 @@ This project serves as a proof of concept to creating a 2D game utilizing the Un
 
 
 
-https://user-images.githubusercontent.com/89750989/193959947-0e98b606-431d-414d-b9bc-1055de669912.mp4
+https://user-images.githubusercontent.com/89750989/194400754-4bca1d08-74c7-47c1-9bcd-266e42a531cf.mp4
+
+
+
 
 
